@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una Noticia</title>
+    <link href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Escriba una noticia</h1>
+
+    <div class="m-5 container-fluid">
+        <form>
+            <div class="row">
+
+                <div class="  col-6">
+                    <label class="form-label" for="inputTitle">Titulo de la noticia</label>
+                    <input id="inputTitle" type="text" class="form-control" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    
+                    <label class="form-label" for="inputUrl">URL(Slug)</label>
+                    <button type="button" class="btn btn-primary mx-2" id="btnURL">Generar URL</button>
+                    <input id="inputUrl" class="form-control" required> 
+                    
+
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="inputDescription" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="inputDescription" rows="3" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="inputRobot" class="form-label" id="labelRobot">Cuánto es el resulato de la suma: </label>
+                    <input class="form-control" id="inputRobot" required type="text">
+                </div>
+
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-6">
+                    <button class="btn btn-primary "  id="btnSave" >Guardar</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
